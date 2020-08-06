@@ -21,7 +21,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#submit").click(function() {
         var CurrentCost = $("#LineCost").val();
-        if ($("ServiceProvider").val() == "Telkom") {
+        if ($("#ServiceProvider").val() == "Telkom") {
             $("#LineSave").html(`You would save R${CurrentCost}.`);
             TotalCost = TotalCost + (CurrentCost);
         } else {
